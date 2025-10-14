@@ -17,10 +17,11 @@ This code base supports replication and extension of the quantitative analyses p
 
 The project code is organized into two primary directories:
 
-| **Directory** | **Content**                       | **Description**                                                                                                                                                                                          |
-| ------------- | --------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `/notebooks/` | Jupyter Notebook files (`.ipynb`) | Contains notebooks for dataset preprocessing and construction, regression analyses, multilevel sensitivity analysis, and figure generation.                                                                               |
-| `/fewsoc/`    | Core Python modules (`.py`)       | Contains runnable Python files for the FewSOC prompting framework. |
+| **Directory** | **Content**                       | **Description**                                                                                                                                                                                                                   |
+| ------------- | --------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `/notebooks/` | Jupyter Notebook files (`.ipynb`) | Contains notebooks for dataset preprocessing and construction, regression analyses, multilevel sensitivity analysis, and figure generation.                                                                                       |
+| `/fewsoc/`    | Core Python modules (`.py`)       | Contains runnable Python files for the FewSOC prompting framework.                                                                                                                                                                |
+| `/data/`      | CSV / TXT files                   | Contains the FewSOC prompt template file, aggregate datasets used for dataset construction, and files required for visualization. Original proprietary Lightcast data is not included. |
 
 ## FewSOC Prompting Framework
 
@@ -180,6 +181,23 @@ There are four main notebooks:
 * **Sensitivity Analysis.ipynb**: Performs multilevel Bayesian logistic regressions to evaluate robustness of main fixed-effect estimates under hierarchical random effects for occupation, industry, state, firm size, and career entry cohort.
 
 * **Figures.ipynb**: Generates all figures from the paper, visualizing gender, race, and job change effects in early-career mobility. Reproduces the key plots for analysis and presentation purposes.
+
+## Files Description
+
+The `/data/` folder contains the following files used in analysis, visualization, and FewSOC classification:
+
+| File Name                                   | Description                                                                                                                        |
+| ------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| `1998_2022_real_gdp_by_state.csv`           | State-level real GDP from 1998 to 2022 (source: BLS)                                                                               |
+| `major_occupation_transitions_y1-5.csv`     | Early career (years 1–5) job transitions between major occupations, aggregated from Career229K dataset                             |
+| `occupation_growth_y1-5.csv`                | Early career (years 1–5) growth rates of major occupations, aggregated from Career229K dataset                                     |
+| `onet-soc_2019.csv`                         | O*NET-SOC 2019 taxonomy                                                                                                            |
+| `onet_prediction_prompt_template_v1.25.txt` | FewSOC prompt template for LLM-based SOC classification                                                                            |
+| `sensitivity_coefficients.csv`              | Coefficients for Models 1–4 and their multilevel sensitivity counterparts                                                          |
+| `table4_coefficients.csv`                   | Coefficients for Models 1–4 as reported in Table 4 of the paper                                                                    |
+| `tgre_zeroshot_gpt4_answers.csv`            | GPT-4o annotated ground-truth SOC titles and codes for occupation classification evaluation                                        |
+| `wage_interpolated_1999_2022_soc_2019.csv`  | State-level wage data from 1999–2022 (source: BLS). SOC codes mapped to O*NET-SOC 2019 via crosswalk files; missing values imputed |
+
 
 ## Setup and Installation
 
