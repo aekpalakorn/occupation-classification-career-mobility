@@ -1,0 +1,27 @@
+Variable,Model 1,Model 2,Model 3,Model 4 Male,Model 4 Female
+Intercept,20.9428*,20.901*,20.938*,20.8066*,21.1082*
+Female,-0.153*,-0.0781*,-0.1529*,-,-
+Black,-0.0701*,-0.0701*,-0.0624$^{\dagger}$,-0.0931$^{\dagger}$,-0.0464
+Asian,0.1328*,0.1332*,0.1776*,0.0991$^{\dagger}$,0.2732
+Hispanic,0.0234,0.0236,0.0639,0.0365,0.0947
+Doctorate,1.2052*,1.2058*,1.2045*,1.1806*,1.2577*
+Master's Degree,0.4082*,0.4083*,0.4079*,0.4046*,0.4155*
+Millennials,0.1739*,0.1738*,0.1736*,0.1831*,0.1633*
+Regional Economic Ranking,0.0217*,0.0217*,0.0217*,0.0149*,0.0295*
+Log(Wage),-2.0908*,-2.0905*,-2.0911*,-2.0749*,-2.1254*
+Job Mobility,0.495*,0.4951*,0.4948*,0.5119*,0.4784*
+Type-1 Change,0.9338*,0.9625*,0.9379*,0.9284*,0.948*
+Type-2 Change,0.9506*,1.0027*,0.9672*,0.9836*,0.9477*
+Type-3 Change,0.7965*,0.8458*,0.8193*,0.8481*,0.7847*
+Female x Type-1 Change,-,-0.0582$^{\ddagger}$,-,-,-
+Female x Type-2 Change,-,-0.1049*,-,-,-
+Female x Type-3 Change,-,-0.0989*,-,-,-
+Black x Type-1 Change,-,-,-0.0041,0.051,-0.0379
+Asian x Type-1 Change,-,-,-0.017,0.0685,-0.1123$^{\dagger}$
+Hispanic x Type-1 Change,-,-,-0.0114,-0.0093,-0.02
+Black x Type-2 Change,-,-,0.0156,0.0964,-0.0241
+Asian x Type-2 Change,-,-,-0.1007$^{\ddagger}$,-0.1162$^{\dagger}$,-0.0779
+Hispanic x Type-2 Change,-,-,-0.0724,-0.091,-0.0506
+Black x Type-3 Change,-,-,-0.0469,-0.0522,-0.025
+Asian x Type-3 Change,-,-,-0.0649,-0.026,-0.1021
+Hispanic x Type-3 Change,-,-,-0.0878,-0.0535,-0.1194

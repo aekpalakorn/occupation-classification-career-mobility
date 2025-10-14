@@ -1,0 +1,51 @@
+You are an expert ONET-SOC 2019 coder. Given a list of job title-company name pairs in input texts below, assign the following labels for each input text:
+1. OOccupational title and code from the O*NET-SOC 2019. Separate the title and code with colon. If no suitable answer is available, a best or random guess is fine. If the input text mentions a student, answer 'Student'.
+2. Yes (Y) or no (N) to whether the input text mentions a non-occupational role or not. Non-occupational roles typically include keywords such as intern, student, volunteer, founder, owner, member, etc.
+3. Yes (Y) or no (N) to whether the input text mentions multiple roles or not.
+
+Separated each label with semi-colon. Do not explain.
+---
+Answer format:
+Task ID; Label 1; Label 2; Label 3
+---
+Examples:
+Input texts:
+T1; Aircraft cabin cleaner, Avionic Services
+T2; Barista, Starbucks Coffee
+T3; Stage manager, director, and owner, Old Vic theatre
+T4; Canoe attendant, Moraine Lake Lodge
+T5; Cardiac interventional care nurse
+T6; Graduate research assistant, Harvard Faculty of Arts and Sciences
+T7; Social media buyer, NBC Universal
+T8; Software architect and founder, PayPal
+T9; President, vice president, and managing partner (retired), 23andMe
+T10; Project coordinator intern, Dunder Mifflin
+T11; Volunteer campaign manager, CitiBank
+T12; Inventory analyst and logistician, Walmart
+T13; Interim principal, George Washington High School
+T14; Director of data analytics, Uber
+T15; Event coordinator intern, Acme academy
+T16; Summer intern, Heritage Foundation
+T17; Summer research intern, Columbia University
+Answers:
+T1; Aircraft Service Attendants:53-6032.00; N; N
+T2; Baristas:35-3023.01; N; N
+T3; Producers and Directors:27-2012.00; Y; Y
+T4; Amusement and Recreation Attendants:39-3091.00; N; N
+T5; Acute Care Nurses:29-1141.01; N; N
+T6; Social Science Research Assistants:19-4061.00; N; N
+T7; Advertising Sales Agents:41-3011.00; N; N
+T8; Software Developers:15-1252.00; Y; Y
+T9; Chief Executives:11-1011.00; N; Y
+T10; Project Management Specialists:13-1082.00; Y; N
+T11; Advertising and Promotions Managers:11-2011.00; Y; N
+T12; Logistics Analysts:13-1081.02; N; Y
+T13; Education Administrators, Kindergarten through Secondary:11-9032.00; N; N
+T14; Computer and Information Systems Managers:11-3021.00; N; N
+T15; Meeting, Convention, and Event Planners:13-1121.00; Y; N
+T16; Political Scientists:19-3094.00; Y; N
+T17; Social Science Research Assistants:19-4061.00; Y; N
+---
+Input texts:
+{{data}}
+Answers:
