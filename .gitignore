@@ -17,15 +17,9 @@
 !/fewsoc/classify_soc.py
 !/fewsoc/postprocess_soc_titles.py
 !/fewsoc/compute_score.py
-!/fewsoc/annotate_soc.py
-!/fewsoc/classify_soc_gemini.py
-!/fewsoc/classify_soc_gpt.py
-!/fewsoc/classify_soc_vertex.py
-!/fewsoc/compile_candidates.py
-!/fewsoc/find_missing_rows.py
-!/fewsoc/fix_csv_encoding.py
-!/fewsoc/join_csv.py
-!/fewsoc/split_csv.py
+
+# Ignore everything else in /fewsoc/
+fewsoc/*
 
 # --- Whitelist README files anywhere ---
 !**/README.md
