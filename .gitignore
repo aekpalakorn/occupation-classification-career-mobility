@@ -1,0 +1,33 @@
+# 1. IGNORE EVERYTHING
+/*
+
+# Un-ignore .gitignore
+!.gitignore
+
+# Un-ignore all directories to allow Git to traverse them
+!*/
+
+# 2. WHITELIST SPECIFIC NOTEBOOKS
+!/notebooks/Dataset Construction.ipynb
+!/notebooks/Main Analysis.ipynb
+!/notebooks/Sensitivity Analysis.ipynb
+!/notebooks/Figures.ipynb
+
+# 3. WHITELIST SPECIFIC PYTHON FILES IN /fewsoc/
+!/fewsoc/classify_soc.py
+!/fewsoc/postprocess_soc_titles.py
+!/fewsoc/compute_score.py
+
+# 4. WHITELIST README files anywhere
+!**/README.md
+
+# 5. WHiTELIST SHARABLE FILES IN /data/
+!/data/onet_prediction_prompt_template_v1.25.txt
+!/data/onet-soc_2019.csv
+!/data/tgre_zeroshot_gpt4_answers.csv
+!/data/1998_2022_real_gdp_by_state.csv
+!/data/wage_interpolated_1999_2022_soc_2019.csv
+!/data/occupation_growth_y1-5.csv
+!/data/major_occupation_transitions_y1-5.csv
+!/data/table4_coefficients.csv
+!/data/sensitivity_coefficients.csv
