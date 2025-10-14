@@ -1,27 +1,36 @@
-# 1. IGNORE EVERYTHING
-/*
+# --- Ignore everything by default ---
+*
 
-# Un-ignore .gitignore
+# --- Un-ignore .gitignore itself ---
 !.gitignore
 
-# Un-ignore all directories to allow Git to traverse them
+# --- Un-ignore all directories so Git can traverse them ---
 !*/
 
-# 2. WHITELIST SPECIFIC NOTEBOOKS
+# --- Whitelist specific notebooks ---
 !/notebooks/Dataset Construction.ipynb
 !/notebooks/Main Analysis.ipynb
 !/notebooks/Sensitivity Analysis.ipynb
 !/notebooks/Figures.ipynb
 
-# 3. WHITELIST SPECIFIC PYTHON FILES IN /fewsoc/
+# --- Whitelist specific Python files in /fewsoc/ ---
 !/fewsoc/classify_soc.py
 !/fewsoc/postprocess_soc_titles.py
 !/fewsoc/compute_score.py
+!/fewsoc/annotate_soc.py
+!/fewsoc/classify_soc_gemini.py
+!/fewsoc/classify_soc_gpt.py
+!/fewsoc/classify_soc_vertex.py
+!/fewsoc/compile_candidates.py
+!/fewsoc/find_missing_rows.py
+!/fewsoc/fix_csv_encoding.py
+!/fewsoc/join_csv.py
+!/fewsoc/split_csv.py
 
-# 4. WHITELIST README files anywhere
+# --- Whitelist README files anywhere ---
 !**/README.md
 
-# 5. WHiTELIST SHARABLE FILES IN /data/
+# --- Whitelist shareable files in /data/ ---
 !/data/onet_prediction_prompt_template_v1.25.txt
 !/data/onet-soc_2019.csv
 !/data/tgre_zeroshot_gpt4_answers.csv
@@ -31,3 +40,15 @@
 !/data/major_occupation_transitions_y1-5.csv
 !/data/table4_coefficients.csv
 !/data/sensitivity_coefficients.csv
+
+# --- Ignore notebook checkpoints ---
+**/.ipynb_checkpoints/
+.ipynb_checkpoints/
+
+# --- Ignore temporary folders / files ---
+.tmp.driveupload/
+**/__temp_pipreqsnb_folder/
+
+# --- Optional: ignore logs and other temp files ---
+*.log
+*.tmp
