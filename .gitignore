@@ -12,6 +12,7 @@
 !/notebooks/Main Analysis.ipynb
 !/notebooks/Sensitivity Analysis.ipynb
 !/notebooks/Figures.ipynb
+!/notebooks/OEWS Code Mapping.iypnb
 
 # --- Whitelist specific Python files in /fewsoc/ ---
 !/fewsoc/classify_soc.py
@@ -34,6 +35,7 @@ fewsoc/*
 !/data/major_occupation_transitions_y1-5.csv
 !/data/table4_coefficients.csv
 !/data/sensitivity_coefficients.csv
+!/data/soc_non2019_to_2019_mapping.csv
 
 # --- Ignore notebook checkpoints ---
 **/.ipynb_checkpoints/
