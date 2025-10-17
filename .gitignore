@@ -12,7 +12,7 @@
 !/notebooks/Main Analysis.ipynb
 !/notebooks/Sensitivity Analysis.ipynb
 !/notebooks/Figures.ipynb
-!/notebooks/OEWS Code Mapping.iypnb
+!/notebooks/OEWS Code Mapping.ipynb
 
 # --- Whitelist specific Python files in /fewsoc/ ---
 !/fewsoc/classify_soc.py
