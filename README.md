@@ -197,6 +197,7 @@ The `/data/` folder contains the following files used in analysis, visualization
 | `table4_coefficients.csv`                   | Coefficients for Models 1–4 as reported in Table 4 of the paper                                                                    |
 | `tgre_zeroshot_gpt4_answers.csv`            | GPT-4o annotated ground-truth SOC titles and codes for occupation classification evaluation                                        |
 | `wage_interpolated_1999_2022_soc_2019.csv`  | State-level wage data from 1999–2022 (source: BLS). SOC codes mapped to O*NET-SOC 2019 via crosswalk files; missing values imputed |
+| `soc_non2019_to_2019_mapping.csv`  | Mapping of legacy 8-digit SOC codes to their corresponding O*NET-SOC 2019 8-digit codes |
 
 
 ## Setup and Installation
