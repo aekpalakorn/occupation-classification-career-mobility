@@ -19,9 +19,9 @@ The project code is organized into two primary directories:
 
 | **Directory** | **Content**                       | **Description**                                                                                                                                                                                                                   |
 | ------------- | --------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `/notebooks/` | Jupyter Notebook files (`.ipynb`) | Contains notebooks for dataset preprocessing and construction, regression analyses, multilevel sensitivity analysis, and figure generation.                                                                                       |
+| `/notebooks/` | Jupyter Notebook files (`.ipynb`) | Contains notebooks for dataset preprocessing and construction, regression analyses, multilevel sensitivity analysis, figure generation and occupational code mapping.                                                                                       |
 | `/fewsoc/`    | Core Python modules (`.py`)       | Contains runnable Python files for the FewSOC prompting framework.                                                                                                                                                                |
-| `/data/`      | CSV / TXT files                   | Contains the FewSOC prompt template file, aggregate datasets used for dataset construction, and files required for visualization. Original proprietary Lightcast data is not included. |
+| `/data/`      | `.csv` / `.txt` files                   | Contains the FewSOC prompt template file, aggregate datasets used for dataset construction, and files required for visualization and standardization. Original proprietary Lightcast data is not included. |
 
 ## FewSOC Prompting Framework
 
@@ -72,8 +72,6 @@ python classify_soc.py \
 * `predictions.csv` — Contains raw SOC predictions with at least `pred_soc_title` and `pred_soc_code` columns.
 * `api_responses.json` — Stores raw API responses.
 * `log_file` — Tracks progress, warnings, and errors.
-
----
 
 ## 2. Post-process SOC Titles
 
@@ -168,19 +166,20 @@ python compute_score.py \
   * Total number of samples compared
   * Number of correctly matched samples
   * Accuracy score (Any Match)
-``
 
 ## Jupyter Notebooks for Upward Mobility Analysis
 
-There are four main notebooks:
+The repository includes three primary notebooks and two optional ones:
 
-* **Dataset Construction.ipynb**: Constructs a cleaned, enriched career trajectories dataset of Bachelor’s degree holders, combining job and education records with demographic predictions and state-level economic data. Optimized for regression analyses of early-career mobility.
+* ``Dataset Construction.ipynb``: Constructs a cleaned, enriched career trajectories dataset of Bachelor’s degree holders, combining job and education records with demographic predictions and state-level economic data. Optimized for regression analyses of early-career mobility.
 
-* **Main Analysis.ipynb**: Fits logistic regression models to assess how gender, race, and job change types predict upward mobility. Explores intersectional disparities via interactions and gender-stratified models.
+* ``Main Analysis.ipynb``: Fits logistic regression models to assess how gender, race, and job change types predict upward mobility. Explores intersectional disparities via interactions and gender-stratified models.
 
-* **Sensitivity Analysis.ipynb**: Performs multilevel Bayesian logistic regressions to evaluate robustness of main fixed-effect estimates under hierarchical random effects for occupation, industry, state, firm size, and career entry cohort.
+* ``Sensitivity Analysis.ipynb``: Conducts multilevel Bayesian logistic regressions to evaluate robustness of main fixed-effect estimates under hierarchical random effects for occupation, industry, state, firm size, and career entry cohort.
 
-* **Figures.ipynb**: Generates all figures from the paper, visualizing gender, race, and job change effects in early-career mobility. Reproduces the key plots for analysis and presentation purposes.
+* ``Figures.ipynb`` (Optional): Reproduces all major figures from the paper, including occupational transition heatmap and coeffcient plots.
+
+* ``OEWS Code Mapping.ipynb`` (Optional): Reproduces the pipeline for standardizing 6-digit occupational codes in BLS's Occupational Employment and Wage Estimates (OEWS) data to 6-digit O*NET-SOC 2019 codes. The stadardized OEWS data is then used for data enrichment in ``Dataset Construction.ipynb``.
 
 ## Files Description
 
