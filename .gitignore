@@ -28,6 +28,7 @@ fewsoc/*
 # --- Whitelist shareable files in /data/ ---
 !/data/onet_prediction_prompt_template_v1.25.txt
 !/data/onet-soc_2019.csv
+!/data/onet-soc_2018.csv
 !/data/tgre_zeroshot_gpt4_answers.csv
 !/data/1998_2022_real_gdp_by_state.csv
 !/data/wage_interpolated_1999_2022_soc_2019.csv
