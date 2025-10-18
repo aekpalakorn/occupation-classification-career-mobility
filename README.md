@@ -190,14 +190,14 @@ The `/data/` folder contains the following files used in analysis, visualization
 | `1998_2022_real_gdp_by_state.csv`           | State-level real GDP from 1998 to 2022 (source: BLS)                                                                               |
 | `major_occupation_transitions_y1-5.csv`     | Early career (years 1–5) job transitions between major occupations, aggregated from Career229K dataset                             |
 | `occupation_growth_y1-5.csv`                | Early career (years 1–5) growth rates of major occupations, aggregated from Career229K dataset                                     |
-| `onet-soc_2019.csv`                         | O*NET-SOC 2019 taxonomy                                      |
 | `onet-soc_2018.csv`                         | O*NET-SOC 2018 taxonomy                                      |
+| `onet-soc_2019.csv`                         | O*NET-SOC 2019 taxonomy                                      |
 | `onet_prediction_prompt_template_v1.25.txt` | FewSOC prompt template for LLM-based SOC classification                                                                            |
 | `sensitivity_coefficients.csv`              | Coefficients for Models 1–4 and their multilevel sensitivity counterparts                                                          |
+| `soc_non2019_to_2019_mapping.csv`  | Mapping of legacy 8-digit SOC codes to their corresponding O*NET-SOC 2019 8-digit codes |
 | `table4_coefficients.csv`                   | Coefficients for Models 1–4 as reported in Table 4 of the paper                                                                    |
 | `tgre_zeroshot_gpt4_answers.csv`            | GPT-4o annotated ground-truth SOC titles and codes for occupation classification evaluation. Some instances have multiple labels, all of which are equally correct.  |
 | `wage_interpolated_1999_2022_soc_2019.csv`  | State-level wage data from 1999–2022 (source: BLS). SOC codes mapped to O*NET-SOC 2019 via crosswalk files; missing values imputed |
-| `soc_non2019_to_2019_mapping.csv`  | Mapping of legacy 8-digit SOC codes to their corresponding O*NET-SOC 2019 8-digit codes |
 
 
 ## Setup and Installation
