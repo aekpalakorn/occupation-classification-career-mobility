@@ -1,8 +1,20 @@
 # Leveraging Large Language Models for Career Mobility Analysis
 
+[![Paper](https://img.shields.io/badge/Paper-EPJ%20Data%20Science-blue.svg)](https://doi.org/10.1140/epjds/s13688-025-00607-0)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)]()
+
+# TL;DR
+
+* **The Data Challenge:** Large-scale analysis of career mobility is often hindered by missing or inaccurate attributes in online resume data; specifically, traditional algorithms for assigning Standard Occupational Classification (SOC) codes achieved only 63% accuracy.
+* **FewSOC Framework:** We developed FewSOC, a batch few-shot prompting framework using Large Language Models (LLMs) to infer occupation labels from job titles and company names, achieving significantly higher accuracy (72%) than existing default labels.
+* **Mobility Analysis:** Using the improved dataset of 228,710 career trajectories, we analyzed four distinct types of job changes (inter-firm vs. intra-firm and occupation vs. lateral changes) to determine their impact on upward mobility.
+* **Results:** While intra-firm occupation changes (internal promotions) are the strongest driver of upward mobility, significant disparities exist: women experience lower returns from job changes than men across all categories, and Asian graduates face lower returns compared to White peers.
+* **Takeaway:** LLMs can effectively clean noisy social science data to reveal that, even among the college-educated workforce, structural barriers prevent women and racial minorities from receiving equitable returns on job mobility compared to their male and White counterparts.
+
 ## Overview
 
-This repository contains the source code for the data analysis and framework, including the FewSOC prompting framework for O*NET-SOC classification, used in the paper:
+This repository contains the source code for the data analysis and framework, including the FewSOC prompting framework for O*NET-SOC classification, used in this EPJ Data Science [paper](https://doi.org/10.1140/epjds/s13688-025-00607-0):
 
 **"Leveraging Large Language Models for Career Mobility Analysis: A Study of Gender, Race, and Job Change Using U.S. Online Resume Profiles."**
 
